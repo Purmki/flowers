@@ -1,0 +1,252 @@
+body{
+    margin:0%
+}
+
+#container{
+    width: 120vw;
+    height: 120vh;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    grid-template-areas: 
+    "headr headr headr headr"
+    "sidebr main main main"
+     "sidebr main main main"
+    "sidebr main main main"
+    "footr footr footr footr"
+    ;
+
+}
+
+.headr{
+    background-color: blue;
+    grid-area: headr;
+   
+}
+
+.headr:hover{
+    cursor: pointer;
+    background-color: aqua;
+}
+#flower{
+    position: absolute;
+    width:15vw;
+    height:19vh;
+    right:0px;
+}
+
+
+
+@media screen and (max-width: 600px){
+    #container{
+    grid-template-areas:
+    
+    "headr headr headr headr"
+    "main main main main"
+     "main main main main"
+    "main main main main"
+    "footr footr footr footr"
+    ;}
+    .sidebr{
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: 600px){
+    #container{
+    grid-template-areas:
+    
+    "headr headr headr headr"
+    "sidebr main main main"
+    "sidebr main main main"
+    "sidebr main main main"
+    "footr footr footr footr"
+    ;}
+    }
+
+
+.sidebr{
+    background-color: rgb(105, 37, 8);
+    grid-area: sidebr;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.main{
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+    background-color: pink;
+    
+}
+
+.footr{
+    background-color: blue;
+    grid-area: footr;
+}
+
+.footr:hover{
+    cursor: pointer;
+    background-color: aqua;
+}
+
+nav a{
+    position: relative;
+    float: left;
+    color: #c71616;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+nav a:hover{
+    color: LightGray;
+    scale: 1.2;
+    text-shadow: 5px 5px #558ABB;
+}
+#continent_container{
+    width:22vw;
+    height:55vh;
+    border: black solid 1px;
+}
+.continent{
+    width:22vw;
+    height:11vh;
+    border: black solid 1px;
+}
+.continent_pic{
+    width:22vw;
+    height:11vh;
+    border: black solid 1px;
+}
+
+.continent_name{
+    width:6vw;
+    height:6vh;
+    border: black solid 1px;
+}
+#europe{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Europe_polar_stereographic_Caucasus_Urals_boundary.svg/700px-Europe_polar_stereographic_Caucasus_Urals_boundary.svg.png);
+    background-size: cover;
+}
+#asia{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/2/23/Asia-Pacific_map1.png);
+    background-size: cover;
+}
+
+#africa{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Africa-countries-WAFU-UFOA.png/300px-Africa-countries-WAFU-UFOA.png);
+    background-size: cover;
+}
+
+#north_america{
+    background-image: url(https://gisgeography.com/wp-content/uploads/2017/11/North-America-Map.jpg);
+    background-size: cover;
+}
+
+#antartica{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Antarctica_relief_location_map.jpg/1024px-Antarctica_relief_location_map.jpg);
+    background-size: cover;
+}
+
+#flower_container{
+    width:45vw;
+    height:95vh;
+    display: flex;
+    flex-wrap:wrap ;
+    justify-content: space-around;
+   
+   
+}
+
+.flower_room{
+    width:14vw;
+    height:18vh;
+    border: black solid 1px;
+}
+
+.flower_name{
+    width:7vw;
+    height:6vh;
+    border: black solid 1px;
+    color: white;
+}
+
+
+#flower1{
+    background-image: url(https://img.freepik.com/free-photo/purple-osteospermum-daisy-flower_1373-16.jpg?w=2000);
+    background-size: cover;   
+
+}
+#flower1:hover{
+    filter: blur(3px);
+    animation: circle 5s;
+
+}
+
+#flower2{
+    background-image: url(https://cdn.britannica.com/45/5645-050-B9EC0205/head-treasure-flower-disk-flowers-inflorescence-ray.jpg);
+    background-size: cover;
+
+}
+#flower2:hover{
+    filter:brightness(150%);
+    animation: circle 5s;
+}
+
+#flower3{
+    background-image: url(https://nationaltoday.com/wp-content/uploads/2022/07/National-Flower-Day-1200x834.jpg);
+    background-size: cover;
+
+}
+#flower3:hover{
+    filter:contrast(175%);
+    animation: circle 5s;
+}
+
+
+#flower4{
+    background-image: url(https://static.pexels.com/photos/36753/flower-purple-lical-blosso.jpg);
+    background-size: cover;
+
+}
+#flower4:hover{
+    filter:sepia(75%);
+    animation: circle 5s;
+}
+
+
+#flower5{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Bachelor%27s_button%2C_Basket_flower%2C_Boutonniere_flower%2C_Cornflower_-_3.jpg/640px-Bachelor%27s_button%2C_Basket_flower%2C_Boutonniere_flower%2C_Cornflower_-_3.jpg);
+    background-size: cover;
+
+}
+#flower5:hover{
+    filter:opacity(50%);
+    animation: circle 5s;
+}
+
+
+@media screen and (max-width: 600px){
+
+    #flower_container{
+        width:45vw;
+        height:95vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+       
+}
+}
+@media screen and (max-width: 600px){
+    #container{
+        width: 120vw;
+        height: 180vh;}
+    }
+
+@keyframes circle{
+    0%{border-radius: 0%;}
+    100%{border-radius: 100%;}
+}
